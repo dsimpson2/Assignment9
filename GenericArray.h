@@ -87,35 +87,47 @@ public:
 
     // Finds the largest value in the array
     T max()
+{
+    // Check for empty array
+    if(currentSize == 0)
     {
-        T maximum = data[0];
-
-        for(int i = 1; i < currentSize; i++)
-        {
-            if(data[i] > maximum)
-            {
-                maximum = data[i];
-            }
-        }
-
-        return maximum;
+        return T();
     }
+
+    T maximum = data[0];
+
+    for(int i = 1; i < currentSize; i++)
+    {
+        if(data[i] > maximum)
+        {
+            maximum = data[i];
+        }
+    }
+
+    return maximum;
+}
 
     // Finds the smallest value in the array
     T min()
+{
+    // Check for empty array
+    if(currentSize == 0)
     {
-        T minimum = data[0];
-
-        for(int i = 1; i < currentSize; i++)
-        {
-            if(data[i] < minimum)
-            {
-                minimum = data[i];
-            }
-        }
-
-        return minimum;
+        return T();
     }
+
+    T minimum = data[0];
+
+    for(int i = 1; i < currentSize; i++)
+    {
+        if(data[i] < minimum)
+        {
+            minimum = data[i];
+        }
+    }
+
+    return minimum;
+}
 
     // Returns a new array containing elements
     // from begin to end (inclusive)

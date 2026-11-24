@@ -1,0 +1,4 @@
+{
+  "C_Cpp.doxygen.generateOnType": true,
+  "C_Cpp.doxygen.generateOnCodeAction": true
+}
